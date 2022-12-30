@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/home/sfwen/satelite_ws/build'
-export PYTHONPATH="/home/sfwen/satelite_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
