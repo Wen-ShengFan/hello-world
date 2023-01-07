@@ -53,6 +53,9 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "talker");
 // %EndTag(INIT)%
 
+  // ros::init(argc, argv, "offb_node");
+  ros::NodeHandle nh;   
+
   /**
    * NodeHandle is the main access point to communications with the ROS system.
    * The first NodeHandle constructed will fully initialize this node, and the last
@@ -105,6 +108,7 @@ int main(int argc, char **argv)
     std::stringstream ss;
     ss << "hello world " << count;
     msg.data = ss.str();
+    
 // %EndTag(FILL_MESSAGE)%
 
 // %Tag(ROSCONSOLE)%

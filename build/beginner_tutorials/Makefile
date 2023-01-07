@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+beginner_tutorials/CMakeFiles/offb_node.dir/rule:
+	cd /home/sfwen/satelite_ws/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/offb_node.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/offb_node.dir/rule
+
+# Convenience name for target.
+offb_node: beginner_tutorials/CMakeFiles/offb_node.dir/rule
+
+.PHONY : offb_node
+
+# fast build rule for target.
+offb_node/fast:
+	cd /home/sfwen/satelite_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/offb_node.dir/build.make beginner_tutorials/CMakeFiles/offb_node.dir/build
+.PHONY : offb_node/fast
+
+# Convenience name for target.
 beginner_tutorials/CMakeFiles/add_two_ints_server.dir/rule:
 	cd /home/sfwen/satelite_ws/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/add_two_ints_server.dir/rule
 .PHONY : beginner_tutorials/CMakeFiles/add_two_ints_server.dir/rule
@@ -728,6 +743,33 @@ src/listener.cpp.s:
 	cd /home/sfwen/satelite_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/listener.dir/build.make beginner_tutorials/CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
+src/offb_node.o: src/offb_node.cpp.o
+
+.PHONY : src/offb_node.o
+
+# target to build an object file
+src/offb_node.cpp.o:
+	cd /home/sfwen/satelite_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/offb_node.dir/build.make beginner_tutorials/CMakeFiles/offb_node.dir/src/offb_node.cpp.o
+.PHONY : src/offb_node.cpp.o
+
+src/offb_node.i: src/offb_node.cpp.i
+
+.PHONY : src/offb_node.i
+
+# target to preprocess a source file
+src/offb_node.cpp.i:
+	cd /home/sfwen/satelite_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/offb_node.dir/build.make beginner_tutorials/CMakeFiles/offb_node.dir/src/offb_node.cpp.i
+.PHONY : src/offb_node.cpp.i
+
+src/offb_node.s: src/offb_node.cpp.s
+
+.PHONY : src/offb_node.s
+
+# target to generate assembly for a file
+src/offb_node.cpp.s:
+	cd /home/sfwen/satelite_ws/build && $(MAKE) -f beginner_tutorials/CMakeFiles/offb_node.dir/build.make beginner_tutorials/CMakeFiles/offb_node.dir/src/offb_node.cpp.s
+.PHONY : src/offb_node.cpp.s
+
 src/talker.o: src/talker.cpp.o
 
 .PHONY : src/talker.o
@@ -765,6 +807,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... offb_node"
 	@echo "... add_two_ints_server"
 	@echo "... listener"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -809,6 +852,9 @@ help:
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/offb_node.o"
+	@echo "... src/offb_node.i"
+	@echo "... src/offb_node.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"

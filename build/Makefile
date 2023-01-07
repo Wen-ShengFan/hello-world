@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named offb_node
+
+# Build rule for target.
+offb_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 offb_node
+.PHONY : offb_node
+
+# fast build rule for target.
+offb_node/fast:
+	$(MAKE) -f beginner_tutorials/CMakeFiles/offb_node.dir/build.make beginner_tutorials/CMakeFiles/offb_node.dir/build
+.PHONY : offb_node/fast
+
+#=============================================================================
 # Target rules for targets named add_two_ints_server
 
 # Build rule for target.
@@ -722,6 +735,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... offb_node"
 	@echo "... add_two_ints_server"
 	@echo "... listener"
 	@echo "... rosgraph_msgs_generate_messages_py"
